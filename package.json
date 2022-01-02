@@ -1,0 +1,26 @@
+{
+  "name": "typescript-nodejs-projectapi",
+  "version": "1.0.0",
+  "description": "An introduction to TypeScript with a simple project  API on NodeJS for beginners (like me)",
+  
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/murilorsv14/TypeScript-NodeJs-ProjectAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/murilorsv14/TypeScript-NodeJs-ProjectAPI/issues"
+  },
+  "homepage": "https://github.com/murilorsv14/TypeScript-NodeJs-ProjectAPI#readme",
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}
