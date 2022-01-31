@@ -1,10 +1,9 @@
-const PORT = 3000;
-
 import express from 'express';
 const app = express();
 
+const PORT = 3000;
+
+
 app.listen(PORT, ()=> console.log(`Listen on port ${PORT}`));
 
-app.get('/ping/', (req, res) => {
-  res.status(200).send({ message: 'pong' });
-});
+export default app;

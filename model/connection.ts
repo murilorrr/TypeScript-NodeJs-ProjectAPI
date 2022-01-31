@@ -4,10 +4,10 @@ require('dotenv').config();
 const MONGO_DB_URL = `mongodb://${process.env.HOST || 'mongodb'}:27017`;
 const DB_NAME = 'Cookmaster';
 
-const mongoCliente = new MongoClient(URL, Option);
+const mongoCliente = new MongoClient(MONGO_DB_URL);
 
 const connection = () => mongoCliente
-  .connect(MONGO_DB_URL)
+  .connect()
     .then((conn) => conn.db(DB_NAME))
     .catch((err) => {
       console.error(err);
