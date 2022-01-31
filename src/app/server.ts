@@ -3,7 +3,6 @@ const app = express();
 
 const PORT = 3000;
 
-
 app.listen(PORT, ()=> console.log(`Listen on port ${PORT}`));
 
 export default app;

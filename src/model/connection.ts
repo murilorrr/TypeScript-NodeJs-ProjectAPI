@@ -14,4 +14,4 @@ const connection = () => mongoCliente
       process.exit();
     });
 
-module.exports = connection;
+export default connection;
