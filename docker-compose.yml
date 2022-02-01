@@ -9,7 +9,9 @@ services:
     environment:
       - HOST=localhost
     volumes:
-      - ".:/usr/src"
+      - "$PWD/src"
 
   database:
     image: mongo
+    ports:
+      - "27017:27017"
