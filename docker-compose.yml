@@ -1,15 +1,15 @@
-version: "3"
-
+version: '3'
 services:
-  app:
+  node:
+    restart: always
     build: .
-    command: npm install
     ports:
-      - "3000:3000"
-    environment:
-      - HOST=localhost
+      - 3000:3000
     volumes:
-      - ".:/usr/src"
-
-  database:
+      - ./:/code
+  mongo:
     image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb:/data/db
