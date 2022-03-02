@@ -1,5 +1,6 @@
 import { MongoClient } from 'mongodb';
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 const MONGO_DB_URL = `mongodb://${process.env.HOST || 'mongodb'}:27017`;
 const DB_NAME = 'Type-script-Project';
